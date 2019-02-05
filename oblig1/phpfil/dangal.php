@@ -1,4 +1,4 @@
-<?php require("header-body.php"); ?>
+<?php $current='dangal'; require("header-body.php"); ?>
     <main>
         <article>  
             <?php

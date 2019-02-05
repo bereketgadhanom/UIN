@@ -79,6 +79,10 @@ nav a:focus {
 nav a:visited {
   color: yellow;
 }
+nav .current-link {
+  background-color: white;
+  color: black;
+}
 
 main {
   grid-area: main;

@@ -1,3 +1,4 @@
+<?php include('current-link.php'); ?>
 
 <!DOCTYPE html>
 <html lang="no">
@@ -14,7 +15,7 @@
         <h1> Film arkiv </h1>
     </header>    
     <nav>
-        <a  href="dangal.php?film=dangal"> Dangal </a>
-        <a  href="drishyam.php?film=drishyam"> Drishyam</a>
-        <a  href="vikram.php?film=vikram"> Vikram Vedha </a>  
+        <a class="<?php echo $dangal; ?>" href="dangal.php?film=dangal"> Dangal </a>
+        <a class="<?php echo $drishyam; ?>" href="drishyam.php?film=drishyam"> Drishyam</a>
+        <a class="<?php echo $vikram; ?>" href="vikram.php?film=vikram"> Vikram Vedha </a>  
     </nav>
