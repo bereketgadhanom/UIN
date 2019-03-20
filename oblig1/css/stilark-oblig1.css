@@ -13,7 +13,7 @@ html {
 
 body {
   display: grid;
-  grid-template-rows: auto auto 420px auto;
+  grid-template-rows: 0.2fr 0.2fr 4fr 0.2fr;
   grid-template-columns: repeat(auto-fit, 1fr);
   grid-template-areas: "header" "nav" "main" "footer";
   margin: 0 auto;
@@ -80,8 +80,7 @@ nav a:visited {
   color: yellow;
 }
 nav .current-link {
-  background-color: white;
-  color: black;
+  background-color: black;
 }
 
 main {
@@ -89,6 +88,7 @@ main {
   margin: 0 auto;
   width: 85%;
   padding: 20px;
+  background: #ffffff;
 }
 main article {
   width: 75%;

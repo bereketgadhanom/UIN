@@ -19,7 +19,7 @@ $color: (
 
 body {
     display: grid;
-    grid-template-rows: auto auto 420px auto;
+    grid-template-rows: 0.2fr 0.2fr 4fr 0.2fr;
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-areas: 
         "header"
@@ -94,8 +94,7 @@ nav {
     }
 
     .current-link{
-        background-color:white;
-        color:black;
+        background-color:black;
     }
 
 }
@@ -105,7 +104,7 @@ main {
     margin: 0 auto;
     width: $makswidth;
     padding: 20px;
-    
+    background: map-get($color, body-farge);  
     article {
         width: 75%;
         margin: 0 auto;
