@@ -1,8 +1,8 @@
 
 <?php
-  if(!empty($_POST) && !empty($_POST['select'])){
+  if(!empty($_GET) && !empty($_GET['select'])){
      // print_r($_POST);
-     $url = $_POST['select'];
+     $url = $_GET['select'];
     header("Location:{$url}");
     exit;
   }
@@ -22,13 +22,13 @@
         $footballag = array(
           'Velg lag' => '',
           'Ajax' => 'https://www.colgate.com/app/PDP/Ajax/US/EN/Home.cwsp',
-          'Barcelona CF' => 'barsa.php',
-          'Manchester United'=> 'manu.html',
-          'Rosenborg Fotballklubb' => 'rosenborg.html',
+          'Barcelona CF' => 'lag-array.php',
+          'Manchester United'=> 'manu.php',
+          'Rosenborg Fotballklubb' => 'rosenborg.php',
         );
       ?>
 
-      <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+      <form method="get" action="<?php echo $_SERVER['PHP_SELF']; ?>">
         <select name="select">
           <?php
             foreach($footballag as $lag => $detalje){
